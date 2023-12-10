@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .first-name{
+            background-color: aqua;
+            color: black;
+        }
+        .last-name{
+            background-color: aquamarine;
+            color: brown;
+        }
+
+        
+        #password{
+            background-color: chartreuse;
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="first-name" style="background-color:yellow;">FIRST NAME: </label>
+        <input type="text" name="first-name" class="first-name" placeholder="ARJUN " id="first-name" required minlength="3" maxlength="20"><br>
+        <label for="last-name">LAST NAME: </label>
+        <input type="text" name="last-name" class="last-name" placeholder="REDDY " id="last-name" required minlength="3" maxlength="20"><br>
+
+        <label for="email">EMAIL: </label>
+        <input style="background-color: rgb(190, 220, 20);" type="email" name="email" class="email" placeholder="arjunreddy@gmail.com" id="email"><br>
+
+        <label for="password">PASSWORD: </label>
+        <input type="password" id="password" name="password" class="password" placeholder="*******"><br>
+
+        <label for="confirmpassword">CONFIRM PASSWORD: </label>
+        <input type="confirmpassword" id="confirmpassword" name="confirmpassword" class="confirmpassword" placeholder="*******"><br>
+
+        <label for="age">AGE: </label>
+        <input type="number" id="age" placeholder="18" class="age" name="age" required minimum="18"><br>
+
+        <label for="gender">GENDER: </label><br>
+        <input type="radio" name="gender" id="gender" value="male"> MALE
+        <input type="radio" name="gender" id="gender" value="female"> FEMALE
+        <input type="radio" name="gender" id="gender" value="other" checked> OTHER <br><br>
+
+        <label for="term">T&C :</label>
+        <input type="checkbox" id="term" name="term" class="term"> I AGREE <br>
+
+        <button type="submit"> SUBMIT</button><br>
+        <button type="reset"> RESET</button>
+
+
+
+
+
+
+    </form>
+</body>
+</html>
